@@ -28,9 +28,12 @@ h1 a{
 }
 h2{
     font-size: 30px;
+    line-height: 1.25em;
 }
 h3{
     color:#0E273C;
+    margin: auto;
+    line-height: 1.5em;
 }
 q{
     display: block;
@@ -78,6 +81,9 @@ q{
     color: #0E273C; 
     border-radius: 20px;
 }
+#introduction p{
+    line-height: 1.5em;
+}
 #cta{
     display: flex;
     justify-content: center;
@@ -98,6 +104,13 @@ q{
     text-decoration: none;
     font-size: 18px;
     max-width: 245px;
+    box-shadow: 8px 8px 2px 1px rgba(0, 72, 255, 0.2);
+}
+#sparkles{
+    color: #759FBC;
+}
+#contact{
+    padding-top: 70px;
 }
 #contactme{
     display: flex;
@@ -126,17 +139,42 @@ img{
 #aboutme p{
     text-align: left;
     line-height: 2em;
-    max-width: 65ch;
+    max-width: 57ch;
     align-content: center;
     text-size-adjust: auto;
+}
+#funstuff{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+#skills{
+    box-shadow: 0px 0px 36px -20px #759FBC;
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px 30px 20px 20px;
+    }
+#skills h2{
+    color: #872657;
+}
+#skills li{
+    list-style-type: none;
+}
+#fun figure{
+    margin: 0;
 }
 strong{
     color: #872657;
 }
+#designprojects div img{
+    max-height: fit-content;
+    border-radius: 15px;
+    align-items: center;
+}
 #socials{
     display: flex;
     justify-content: center;   
-    gap: 30px;  
+    gap: 30px; 
+    padding: 30px 0px;
 }
 #healthguardian{
     padding-bottom: 20px;
@@ -146,6 +184,15 @@ strong{
 }
 #app p{
     padding-top: 20px;
+}
+#wwstyleguide figure{
+    margin: 0;
+}
+#windwomenpics figure{
+    margin: 0;
+}
+#windwomenpics video{
+    max-width: fit-content;
 }
 #link{
     margin: auto;
@@ -165,8 +212,10 @@ form{
     flex-direction: column;
     color: #0E273C;
     margin: auto;
-    padding-top: 30px;
     max-width: 800px;
+    box-shadow: 0px 0px 36px -20px #759FBC;
+    border-radius: 20px;
+    padding: 40px;
 }
 footer{
     border-top-color:#0E273C;
@@ -217,9 +266,6 @@ footer{
         display: flex;
         flex-direction: row-reverse;
     }
-    #introduction div{
-        margin: auto;
-    }
     #introduction h2{
     margin: 0;
     }
@@ -231,7 +277,7 @@ footer{
     }
     #cta{
         display: flex;
-        justify-content: left;
+        align-items: center;
         border-radius: 20px;
     }
     #cta a{
@@ -241,23 +287,13 @@ footer{
         font-size: 18px;
         text-decoration: none;
     }
-    #contact{
-        margin-left: 50px;
-        font-size: x-large;
-    }
     #contactme{
-        display: flex;
-        justify-content: center;
         gap: 60px;
-        padding-bottom: 10px;
     }
     #aboutme{
         display: flex;
         padding: 20px;
-    }
-    #info{
         margin: auto;
-        max-width: 45ch;
         text-align: left;
         line-height: 1.5em;
         font-size: medium;
@@ -275,8 +311,19 @@ footer{
         max-width: 300px; 
         max-height: 300px;
     }
-    #design section{
-        padding-top: 30px;
+    #funstuff{
+        padding-top: 100px;
+        display: flex;
+    }
+    #skills{
+        margin-left: 70px;
+        width: 23%;
+    }
+    #fun{
+        margin-right: 70px;
+    }
+    #fun figure{
+        padding-top: 0;
     }
     #designprojects{
         padding: 0px 30px 0px 30px;
@@ -285,10 +332,6 @@ footer{
         display: flex;
         justify-content: center;
         justify-content: space-evenly;
-    }
-    #designprojects figure img{
-        display: block;
-        border-radius: 15px;
     }
     #kamsa div{
         display: flex;
@@ -338,8 +381,21 @@ footer{
     #arsproducts{
         display: flex;
     }
+    #wwstyleguide div{
+        display: flex;
+        justify-content: space-between;
+    }
+    #wwstyleguide figure{
+        padding: 0px 30px;
+    }
     #windwomenpics div{
         display: flex;
+    }
+    #windwomenpics figure{
+        padding: 15px;
+    }
+    #windwomenpics video{
+        align-self: end;
     }
     #dearucd div{
         display: flex;
@@ -347,18 +403,6 @@ footer{
     #contacting section{
         margin: auto;
         padding: 20px;
-    }
-    
-    #message figure{
-        padding-top: 15px;
-    }
-    #message img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 15px;
-        width: 400px;
-        height: auto;
     }
     #socials{
         display: flex;
