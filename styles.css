@@ -150,7 +150,7 @@ img{
 #skills{
     box-shadow: 0px 0px 36px -20px #759FBC;
     border-radius: 20px;
-    margin: auto;
+    margin: 0px auto 50px auto;
     padding: 10px 30px 20px 20px;
     }
 #skills h2{
@@ -159,8 +159,31 @@ img{
 #skills li{
     list-style-type: none;
 }
-#fun figure{
-    margin: 0;
+#fun{
+    position: relative;
+}
+#fun #label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+}
+#fun section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 50px;
+}
+#fun section img{
+    display: block;
+    max-width: 100%;
+    border-radius: 15px;
+}
+#fun section .square{
+    grid-column: span 3;
+}
+#fun section .tall{
+    grid-column: span 2;
 }
 strong{
     color: #872657;
@@ -320,10 +343,14 @@ footer{
         width: 23%;
     }
     #fun{
-        margin-right: 70px;
+        margin-left: 30px;
     }
-    #fun figure{
-        padding-top: 0;
+    #fun #label{
+        left: 20px;
+        width: 25%;
+    }
+    #fun section{
+        padding: 75px;
     }
     #designprojects{
         padding: 0px 30px 0px 30px;
