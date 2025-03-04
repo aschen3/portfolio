@@ -210,6 +210,12 @@ strong{
 #wwstyleguide figure{
     margin: 0;
 }
+#mockups img{
+    height: auto;
+}
+#mockups p{
+    text-align: center;
+}
 #windwomenpics figure{
     margin: 0;
 }
@@ -422,6 +428,11 @@ footer{
     }
     #wwstyleguide figure{
         padding: 0px 30px;
+    }
+    #mockups div{
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
     }
     #windwomenpics div{
         display: flex;
