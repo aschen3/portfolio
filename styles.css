@@ -42,7 +42,7 @@ q{
     text-align: center;
     color: #872657;
     font-weight: bold;
-    padding: 20px;
+    padding: 20px 0px;
 }
 #menu{
     align-content: center;
@@ -117,8 +117,9 @@ q{
     gap: 20px;
     padding-bottom: 20px;
 }
-form{
-    color: #0E273C;
+#cat img{
+    box-shadow: 0px 0px 36px -20px #0E273C;
+    border-radius: 500px;
 }
 #design section p{
     color: #872657;
@@ -198,14 +199,23 @@ strong{
     gap: 30px; 
     padding: 30px 0px;
 }
-#healthguardian{
+#heroimages{
+    margin: 0;
     padding-bottom: 20px;
+}
+#kamsaapplications p{
+    text-align: center;
+}
+#kamsaads figure{
+    margin: auto;
+    padding-bottom: 15px;
 }
 #newsletter{
     filter: drop-shadow(#759FBC 0.25rem 0.25rem 10px);
 }
 #app p{
     padding-top: 20px;
+    margin-top: 0;
 }
 #wwstyleguide figure{
     margin: 0;
@@ -234,6 +244,7 @@ strong{
     color: #FEF5EA;
     padding: 15px;
     border-radius: 20px;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
 }
 form{
     display: flex;
@@ -378,9 +389,6 @@ footer{
         display: flex;
         align-content: center;
     }
-    #kamsa p{
-        text-align: center;
-    }
     #logomark p{
         text-align: center;
     }
@@ -422,6 +430,22 @@ footer{
     #arsproducts{
         display: flex;
     }
+    #heroimages img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #link a{
+        box-shadow: none;
+    }
+    #link a:hover{
+        transform: scale(1.05);
+        box-shadow: 0px 0px 9px 5px rgba(117,159,188,0.35);
+    }
+    #description {
+        margin: auto;
+        max-width: 88%;
+    }
     #wwstyleguide div{
         display: flex;
         justify-content: space-between;
@@ -450,10 +474,13 @@ footer{
         margin: auto;
         padding: 20px;
     }
-    #socials{
-        display: flex;
-        justify-content: center;   
+    #socials{ 
         gap: 100px;
+    }
+    #cat img{
+        display: block;
+        margin-left: auto;
+        width: 25%;
     }
     footer{
         font-size: 20px;
