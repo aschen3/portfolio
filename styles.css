@@ -150,14 +150,16 @@ img{
 #skills{
     box-shadow: 0px 0px 36px -20px #759FBC;
     border-radius: 20px;
-    margin: 0px auto 50px auto;
-    padding: 10px 30px 20px 20px;
+    padding: 30px;
+    margin-bottom: 20px;
     }
 #skills h2{
     color: #872657;
+    margin: 0;
 }
 #skills li{
     list-style-type: none;
+    margin: 0;
 }
 #fun{
     position: relative;
@@ -234,6 +236,9 @@ strong{
 }
 #windwomenpics video{
     max-width: fit-content;
+}
+#sketches figure{
+    margin: 0;
 }
 #dearucd figure{
     margin: 0;
@@ -357,6 +362,8 @@ footer{
     #skills{
         margin-left: 70px;
         width: 50%;
+        padding: 40px 40px 0px 40px;
+        margin-bottom: 0;
     }
     #fun{
         margin-left: 30px;
@@ -462,6 +469,13 @@ footer{
     }
     #windwomenpics video{
         align-self: end;
+    }
+    #sketches div{
+        display: flex;
+    }
+    #colorsketch{
+        display: flex;
+        flex-direction: column;
     }
     #dearucd div{
         display: flex;
