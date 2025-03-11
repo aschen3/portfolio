@@ -1,23 +1,26 @@
 html{
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
 }
 header{
     border-bottom: 1px solid #005268;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 body{
     margin: auto;
     background: #FEF5EA;
     padding: 40px;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
     font-style: normal;
-    color: #0E273C;
+    color: rgb(86, 48, 38);
     line-height: 1.5em;
+    text-transform: lowercase;
 }
 h1{
     text-align: center;
     font-family: "Signika Negative", sans-serif;
+    text-transform: capitalize;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 30px;
@@ -27,11 +30,14 @@ h1 a{
     color: #005268;
 }
 h2{
+    font-weight: 600;
     font-size: 30px;
     line-height: 1.25em;
+    margin: 20px 0px;
+    text-transform: capitalize;
 }
 h3{
-    color:#0E273C;
+    font-weight: 500;
     margin: auto;
     line-height: 1.5em;
 }
@@ -48,10 +54,10 @@ q{
     align-content: center;
     display: block;
     text-align: center;
-    font-weight: bold;
-    font-family: "Signika Negative", sans-serif;
+    font-weight: 700;
     font-optical-sizing: auto;
     font-size: 20px;
+    text-transform: capitalize;
 }
 #menu ul{
     margin: 0;
@@ -97,12 +103,11 @@ q{
     padding-right: 50px;
     border-radius: 20px;
     color: #FEF5EA;
-    font-family: "Signika Negative", sans-serif;
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
     font-optical-sizing: auto;
-    font-weight: 600px;
-    font-style: normal;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     max-width: 245px;
 }
 #sparkles{
@@ -139,7 +144,7 @@ img{
 #aboutme p{
     text-align: left;
     line-height: 2em;
-    max-width: 57ch;
+    max-width: 50ch;
     align-content: center;
     text-size-adjust: auto;
 }
@@ -156,9 +161,10 @@ img{
 #skills h2{
     color: #872657;
     margin: 0;
+    margin-bottom: 20px;
 }
 #skills li{
-    list-style-type: none;
+    list-style-type: circle;
     margin: 0;
 }
 #fun{
@@ -208,12 +214,17 @@ strong{
     margin: 0;
     padding-bottom: 20px;
 }
-#kamsaapplications p{
-    text-align: center;
+#description p{
+    text-align: left;
 }
-#kamsaads figure{
-    margin: auto;
-    padding-bottom: 15px;
+#kamsa div{
+    align-content: center;
+}
+#kamsa figure{
+    margin: 0;
+}
+#kamsaapplications figure{
+    margin-bottom: 20px;
 }
 #newsletter{
     filter: drop-shadow(#759FBC 0.25rem 0.25rem 10px);
@@ -264,9 +275,11 @@ footer{
     color: #005268; 
     text-align: center; 
     font-family: "Signika Negative", sans-serif;
+    font-weight: 400;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 12px;
+    text-transform: capitalize;
 }
 
 @media only screen and (min-width: 600px) {
@@ -321,10 +334,8 @@ footer{
         border-radius: 20px;
     }
     #cta a{
-        font-family: "Signika Negative", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
-        font-size: 18px;
         text-decoration: none;
     }
     #cta a:hover{
@@ -341,6 +352,9 @@ footer{
         text-align: left;
         line-height: 1.5em;
         font-size: medium;
+    }
+    #aboutme p{
+        max-width: 65ch;
     }
     #pfp{
         display: flex;
@@ -390,27 +404,15 @@ footer{
     }
     #kamsa div{
         display: flex;
-        align-content: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+    #kamsa figure{
+        max-height: fit-content;
     }
     #logomark p{
         text-align: center;
-    }
-    #kamsacolor{
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    #kamsaads div{
-        display: flex;
-    }
-    #kamsaapplications div{
-        display: flex;
-        text-align: center;
-    }
-    #kamsaapplications img{
-        width: 2000px;
-    }
-    #packaging div{
-        display: flex;
     }
     #mainaaa section{
         padding-bottom: 10px;
@@ -445,9 +447,11 @@ footer{
         transform: scale(1.05);
         box-shadow: 0px 0px 9px 5px rgba(117,159,188,0.35);
     }
-    #description {
-        margin: auto;
-        max-width: 88%;
+    #description p{
+        max-width: 85%;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
     }
     #wwstyleguide div{
         display: flex;
@@ -502,6 +506,4 @@ footer{
     footer{
         font-size: 20px;
     }
-}
-@media only screen and (min-width: 1024px) {
 }
