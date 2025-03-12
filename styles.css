@@ -263,6 +263,9 @@ strong{
 #sketches figure{
     margin: 0;
 }
+#sketches p{
+    text-align: center;
+}
 #dearucd figure{
     margin: 0;
 }
@@ -499,10 +502,11 @@ footer{
     }
     #sketches div{
         display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
-    #colorsketch{
-        display: flex;
-        flex-direction: column;
+    #sketches figure{
+        padding: 10px
     }
     #dearucd div{
         display: flex;
