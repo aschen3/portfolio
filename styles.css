@@ -206,6 +206,7 @@ img{
 }
 strong{
     color: #872657;
+    font-weight: 600;
 }
 #designprojects div img{
     max-height: fit-content;
@@ -435,6 +436,9 @@ footer{
     }
     #mainaaa section{
         padding-bottom: 10px;
+    }
+    #graphics h2{
+        max-width: 45ch;
     }
     #graphics div{
         display: flex;
