@@ -11,9 +11,9 @@ body{
     background: #FEF5EA;
     padding: 40px;
     font-family: "area-normal", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
-    color: rgb(86, 48, 38);
+    color: #573026;
     line-height: 1.5em;
     text-transform: lowercase;
 }
@@ -69,17 +69,21 @@ q{
     line-height: 2em;
     color: #872657;
 }
-#hero{
+
+#introduction figure{
     margin: auto;
     display: flex;
     justify-content: center;
     
 }
-#hero img{
+#introduction img{
     border-radius: 10px;
 }
 #introduction{
     padding-top: 45px;
+}
+#introduction h2{
+    text-transform: lowercase;
 }
 #introduction div{
     margin: auto;
@@ -89,6 +93,7 @@ q{
 }
 #introduction p{
     line-height: 1.5em;
+    max-width: 30ch;
 }
 #cta{
     display: flex;
@@ -109,18 +114,24 @@ q{
     text-decoration: none;
     font-size: 16px;
     max-width: 245px;
+    text-transform: capitalize;
 }
 #sparkles{
     color: #759FBC;
 }
 #contact{
-    padding-top: 70px;
+    padding-top: 50px;
 }
-#contactme{
+#contact div{
     display: flex;
     justify-content: center;
     gap: 20px;
     padding-bottom: 20px;
+}
+#contact h2{
+    max-width: 9ch;
+    line-height: 1.5em;
+    font-optical-sizing: auto;
 }
 #cat img{
     box-shadow: 0px 0px 36px -20px #0E273C;
@@ -307,7 +318,7 @@ footer{
     #menu a{
         text-decoration: none;
     }
-    #hero{
+    #introduction figure{
         max-height: fit-content;
         padding: 0;
     }
@@ -326,7 +337,7 @@ footer{
         font-size: 28px;
         text-size-adjust: auto;
         max-width: 26ch;
-        line-height: 1.25em;
+        line-height: 1.5em;
     }
     #cta{
         display: flex;
@@ -342,7 +353,15 @@ footer{
         transform: scale(1.05);
         box-shadow: 0px 0px 9px 5px rgba(117,159,188,0.35);
     }
-    #contactme{
+    #contact{
+        margin: 0px 34px;
+    }
+    #contact h2{
+        max-width: fit-content;
+    }
+    #contact div{
+        display: flex;
+        justify-content: center;
         gap: 60px;
     }
     #aboutme{
