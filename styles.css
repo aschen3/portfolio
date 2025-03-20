@@ -3,7 +3,6 @@ html{
     -webkit-text-size-adjust: 100%;
 }
 header{
-    border-bottom: 1px solid #005268;
     padding-bottom: 20px;
 }
 body{
@@ -13,7 +12,7 @@ body{
     font-family: "area-normal", sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: #573026;
+    color: #251605;
     line-height: 1.5em;
     text-transform: lowercase;
 }
@@ -53,11 +52,12 @@ q{
 #menu{
     align-content: center;
     display: block;
-    text-align: center;
+    text-align: left;
     font-weight: 700;
     font-optical-sizing: auto;
     font-size: 20px;
     text-transform: capitalize;
+    padding: 0px 55px;
 }
 #menu ul{
     margin: 0;
@@ -69,12 +69,19 @@ q{
     line-height: 2em;
     color: #872657;
 }
-
+ul.submenu li{
+    font-size: medium;
+    padding: 5px;
+    border: 1px solid #005268;
+    text-align: center;
+}
 #introduction figure{
     margin: auto;
     display: flex;
     justify-content: center;
-    
+}
+ul.submenu a{
+    border: #005268;
 }
 #introduction img{
     border-radius: 10px;
@@ -87,8 +94,7 @@ q{
 }
 #introduction div{
     margin: auto;
-    font-size: large;
-    color: #0E273C; 
+    font-size: large; 
     border-radius: 20px;
 }
 #introduction p{
@@ -132,6 +138,9 @@ q{
     max-width: 9ch;
     line-height: 1.5em;
     font-optical-sizing: auto;
+}
+#cat{
+    margin: auto;
 }
 #cat img{
     box-shadow: 0px 0px 36px -20px #0E273C;
@@ -263,9 +272,6 @@ strong{
 #sketches figure{
     margin: 0;
 }
-#sketches p{
-    text-align: center;
-}
 #dearucd figure{
     margin: 0;
 }
@@ -282,6 +288,10 @@ strong{
     padding: 15px;
     border-radius: 20px;
     box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+}
+#contacting h3{
+    text-align: left;
+    line-height: 2em;
 }
 footer{
     border-top-color:#0E273C;
@@ -310,17 +320,27 @@ footer{
     q{
         font-size: 45px;
     }
+    #menu{
+        text-align: start;
+        padding: 0px;
+        border-bottom: 1px solid #005268;
+    }
     #menu ul{
         display: flex;
-        justify-content: center;
-        justify-content: space-evenly;
-        gap: 5px;
+        justify-content: space-around;
     }
     #menu ul li {
         list-style-type: none;
     }
     #menu a{
         text-decoration: none;
+    }
+    ul.submenu{
+        display: flex;
+        flex-direction: column; 
+    }
+    ul.submenu li{
+        text-align: left;
     }
     #introduction figure{
         max-height: fit-content;
@@ -340,7 +360,7 @@ footer{
     #introduction p{
         font-size: 28px;
         text-size-adjust: auto;
-        max-width: 26ch;
+        max-width: 27ch;
         line-height: 1.5em;
     }
     #cta{
@@ -518,17 +538,23 @@ footer{
         display: flex;
         justify-content: center;
     }
+    #contacting{
+        display: flex;
+        gap: 20px;
+    }
     #contacting section{
         margin: auto;
         padding: 20px;
     }
+    #contacting h3{
+    max-width: 65ch;
+    }
     #socials{ 
         gap: 100px;
     }
-    #cat img{
+    #cat{
         display: block;
-        margin-left: auto;
-        width: 25%;
+        margin-top: auto;
     }
     footer{
         font-size: 20px;
