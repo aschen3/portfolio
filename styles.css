@@ -69,6 +69,25 @@ q{
     line-height: 2em;
     color: #872657;
 }
+#menu ul li:hover ul{
+    left: auto;
+}
+#dropdown{
+    background-image: url(images/chevron-right-solid.svg);
+    background-size: 7%;
+    background-position: right 60%;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+}
+#dropdown:hover{
+    background-image: url(images/chevron-down-solid.svg);
+    background-size: 10%;
+}
+.submenu{
+    position: absolute;
+    left: -5000px;
+    background-color: #FEF5EA;
+}
 ul.submenu li{
     font-size: medium;
     padding: 5px;
