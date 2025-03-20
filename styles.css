@@ -90,8 +90,8 @@ q{
 }
 ul.submenu li{
     font-size: medium;
-    padding: 5px;
-    border: 1px solid #005268;
+    padding: 8px;
+    border: 0.75px solid #005268;
     text-align: center;
 }
 #introduction figure{
