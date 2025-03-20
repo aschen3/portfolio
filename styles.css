@@ -154,7 +154,7 @@ ul.submenu a{
     padding-bottom: 20px;
 }
 #contact h2{
-    max-width: 9ch;
+    font-size: 28px;
     line-height: 1.5em;
     font-optical-sizing: auto;
 }
@@ -401,6 +401,7 @@ footer{
     }
     #contact h2{
         max-width: fit-content;
+        font-size: 30px;
     }
     #contact div{
         display: flex;
