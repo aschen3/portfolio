@@ -22,7 +22,7 @@ h1{
     text-transform: capitalize;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 30px;
+    font-size: 40px;
 }
 h1 a{
     text-decoration: none;
@@ -57,7 +57,6 @@ q{
     font-optical-sizing: auto;
     font-size: 20px;
     text-transform: capitalize;
-    padding: 0px 55px;
 }
 #menu ul{
     margin: 0;
@@ -75,7 +74,7 @@ q{
 #dropdown{
     background-image: url(images/chevron-right-solid.svg);
     background-size: 7%;
-    background-position: right 60%;
+    background-position: 70% 60%;
     background-repeat: no-repeat;
     padding-right: 20px;
 }
@@ -360,6 +359,13 @@ footer{
     }
     ul.submenu li{
         text-align: left;
+    }
+    #dropdown{
+        background-image: url(images/chevron-right-solid.svg);
+        background-size: 7%;
+        background-position: right 60%;
+        background-repeat: no-repeat;
+        padding-right: 20px;
     }
     #introduction figure{
         max-height: fit-content;
