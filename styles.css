@@ -61,9 +61,6 @@ q{
 #menu img{
     margin-left: 270px;
 }
-#menu img:hover ul.mobile-menu{
-    left: auto;
-}
 #menu ul{
     margin: 0;
     padding: 0;
