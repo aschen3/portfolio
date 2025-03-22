@@ -22,7 +22,7 @@ h1{
     text-transform: capitalize;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 40px;
+    font-size: 38px;
 }
 h1 a{
     text-decoration: none;
@@ -58,6 +58,12 @@ q{
     font-size: 20px;
     text-transform: capitalize;
 }
+#menu img{
+    margin-left: 270px;
+}
+#menu img:hover ul.mobile-menu{
+    left: auto;
+}
 #menu ul{
     margin: 0;
     padding: 0;
@@ -68,19 +74,16 @@ q{
     line-height: 2em;
     color: #872657;
 }
-#menu ul li:hover ul{
-    left: auto;
-}
 #dropdown{
     background-image: url(images/chevron-right-solid.svg);
-    background-size: 7%;
-    background-position: 70% 60%;
+    background-size: 4%;
+    background-position: 50% 60%;
     background-repeat: no-repeat;
     padding-right: 20px;
 }
 #dropdown:hover{
     background-image: url(images/chevron-down-solid.svg);
-    background-size: 10%;
+    background-size: 6%;
 }
 .submenu{
     position: absolute;
@@ -343,6 +346,9 @@ footer{
         padding: 0px;
         border-bottom: 1px solid #005268;
     }
+    #menu img{
+        display: none;
+    }
     #menu ul{
         display: flex;
         justify-content: space-around;
@@ -366,6 +372,10 @@ footer{
         background-position: right 60%;
         background-repeat: no-repeat;
         padding-right: 20px;
+    }
+    #dropdown:hover{
+        background-image: url(images/chevron-down-solid.svg);
+        background-size: 10%;
     }
     #introduction figure{
         max-height: fit-content;
