@@ -259,6 +259,10 @@ strong{
 }
 #description p{
     text-align: left;
+    margin-top: 0;
+}
+#mainaaa img{
+    padding-top: 20px;
 }
 #kamsa div{
     align-content: center;
