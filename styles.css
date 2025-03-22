@@ -59,12 +59,16 @@ q{
     text-transform: capitalize;
 }
 #menu img{
-    margin-left: 270px;
+    display: block;
+    margin-left: auto;
 }
 #menu ul{
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+#menu ul li{
+    z-index: -5000px;
 }
 #menu ul li a{
     text-decoration: none;
