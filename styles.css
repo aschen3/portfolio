@@ -317,7 +317,6 @@ strong{
 }
 #contacting h3{
     text-align: left;
-    line-height: 2em;
 }
 footer{
     border-top-color:#0E273C;
@@ -584,14 +583,16 @@ footer{
         gap: 20px;
     }
     #contacting section{
-        margin: auto;
-        padding: 20px;
+        padding: 20px 0;
     }
     #contacting h3{
-    max-width: 65ch;
+    max-width: 45ch;
+    margin-top: 0;
+    line-height: 2em;
     }
     #socials{ 
-        gap: 100px;
+        gap: 80px;
+        justify-content: left;
     }
     #cat{
         display: block;
