@@ -2,9 +2,6 @@ html{
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
 }
-header{
-    padding-bottom: 20px;
-}
 body{
     margin: auto;
     background: #FEF5EA;
@@ -57,32 +54,57 @@ q{
     font-optical-sizing: auto;
     font-size: 20px;
     text-transform: capitalize;
+    position: relative;
 }
-#menu img{
+#menu-icon {
     display: block;
-    margin-left: auto;
+    color: #251605;
+    cursor: pointer;
+    font-size: 50px;
+    margin-left: 87%;
+  }
+  
+#menu-toggle {
+    display: none;
 }
+  
+#dropdown1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 0px;
+    display: none;
+  }
+  
+#dropdown1 li a {
+    display: block;
+  }
+  
+#dropdown1 li a:hover {
+    background-color: #FEF5EA;
+  }
+  
+  #menu-toggle:checked + #menu-icon + #dropdown1 {
+    display: block;
+  }
 #menu ul{
     margin: 0;
     padding: 0;
     list-style-type: none;
-}
-#menu ul li{
-    z-index: -5000px;
+    display: none;
 }
 #menu ul li a{
     text-decoration: none;
     line-height: 2em;
     color: #872657;
 }
-#dropdown{
+#dropdown2{
     background-image: url(images/chevron-right-solid.svg);
     background-size: 4%;
     background-position: 50% 60%;
     background-repeat: no-repeat;
     padding-right: 20px;
 }
-#dropdown:hover{
+#dropdown2:hover{
     background-image: url(images/chevron-down-solid.svg);
     background-size: 6%;
 }
@@ -350,9 +372,9 @@ footer{
         padding: 0px;
         border-bottom: 1px solid #005268;
     }
-    #menu img{
+    #menu-icon {
         display: none;
-    }
+      }
     #menu ul{
         display: flex;
         justify-content: space-around;
@@ -370,14 +392,14 @@ footer{
     ul.submenu li{
         text-align: left;
     }
-    #dropdown{
+    #dropdown2{
         background-image: url(images/chevron-right-solid.svg);
         background-size: 7%;
         background-position: right 60%;
         background-repeat: no-repeat;
         padding-right: 20px;
     }
-    #dropdown:hover{
+    #dropdown2:hover{
         background-image: url(images/chevron-down-solid.svg);
         background-size: 10%;
     }
@@ -597,6 +619,7 @@ footer{
     #cat{
         display: block;
         margin-top: auto;
+        padding: 20px 0;
     }
     footer{
         font-size: 20px;
