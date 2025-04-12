@@ -19,7 +19,7 @@ h1{
     text-transform: capitalize;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 38px;
+    font-size: 30px;
 }
 h1 a{
     text-decoration: none;
@@ -61,7 +61,7 @@ q{
     color: #251605;
     cursor: pointer;
     font-size: 50px;
-    margin-left: 87%;
+    margin-left: 85%;
     padding-bottom: 22px;
   }
   
