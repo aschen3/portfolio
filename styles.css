@@ -609,7 +609,7 @@ footer{
     line-height: 2em;
     }
     #socials{ 
-        gap: 80px;
+        gap: 40px;
         justify-content: left;
     }
     #cat{
