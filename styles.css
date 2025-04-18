@@ -598,13 +598,13 @@ footer{
     }
     #contacting{
         display: flex;
-        gap: 20px;
+        gap: 60px;
     }
     #contacting section{
         padding: 20px 0;
     }
     #contacting h3{
-    max-width: 45ch;
+    max-width: 35ch;
     margin-top: 0;
     line-height: 2em;
     }
@@ -614,8 +614,8 @@ footer{
     }
     #cat{
         display: block;
-        margin-top: auto;
-        padding: 20px 0;
+        padding: 40px 0;
+        max-width: 70%;
     }
     footer{
         font-size: 20px;
