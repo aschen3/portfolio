@@ -104,7 +104,7 @@ q{
 }
 #dropdown2:hover{
     background-image: url(images/chevron-down-solid.svg);
-    background-size: 6%;
+    background-size: 8%;
 }
 #dropdown2:hover .submenu{
     left: auto;
@@ -480,6 +480,7 @@ footer{
     #funstuff{
         padding-top: 100px;
         display: flex;
+        justify-content: space-between;
     }
     #skills{
         margin-left: 70px;
