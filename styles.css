@@ -531,9 +531,11 @@ footer{
     }
     #graphics div{
         display: flex;
+        justify-content: space-evenly;
     }
     #sns div{
         display: flex;
+        justify-content: space-evenly;
     }
     #labels{
         display: flex;
