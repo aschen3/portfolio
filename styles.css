@@ -537,6 +537,10 @@ footer{
         display: flex;
         justify-content: space-evenly;
     }
+    #refresh_logo{
+        display: flex;
+        justify-content: space-evenly;
+    }
     #labels{
         display: flex;
     }
