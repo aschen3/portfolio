@@ -279,14 +279,12 @@ strong{
 }
 #heroimages{
     margin: 0;
-    padding-bottom: 20px;
+}
+#heroimages img{
+    padding: 10px 0px;
 }
 #description p{
     text-align: left;
-    margin-top: 0;
-}
-#mainaaa img{
-    padding-top: 20px;
 }
 #kamsa div{
     align-content: center;
@@ -524,8 +522,9 @@ footer{
         text-align: center;
     }
     #mainaaa section{
-        padding-bottom: 10px;
+        padding-bottom: 0px;
     }
+    
     #graphics h2{
         max-width: 45ch;
     }
@@ -557,6 +556,7 @@ footer{
         display: block;
         margin-left: auto;
         margin-right: auto;
+        padding: 20px 0px;
     }
     #link a{
         box-shadow: none;
