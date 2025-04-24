@@ -270,6 +270,13 @@ strong{
 #merch figure{
     margin: 0;
 }
+#graphics figure{
+    margin: 16px 0px;
+}
+#graphics img:hover{
+    transform: scale(1.15);
+    box-shadow: 0px 0px 9px 5px rgba(117,159,188,0.35);
+}
 #socials{
     display: flex;
     justify-content: center;   
@@ -534,6 +541,9 @@ footer{
     #graphics div{
         display: flex;
         justify-content: space-evenly;
+    }
+    #graphics figure{
+        padding: 0px 20px;
     }
     #sns div{
         display: flex;
