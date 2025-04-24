@@ -591,6 +591,7 @@ footer{
     }
     #windwomenpics div{
         display: flex;
+        justify-content: space-between;
     }
     #windwomenpics figure{
         padding: 15px;
