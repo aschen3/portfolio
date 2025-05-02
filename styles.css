@@ -273,10 +273,6 @@ strong{
 #graphics figure{
     margin: 16px 0px;
 }
-#graphics img:hover{
-    transform: scale(1.15);
-    box-shadow: 0px 0px 9px 5px rgba(117,159,188,0.35);
-}
 #socials{
     display: flex;
     justify-content: center;   
@@ -544,6 +540,10 @@ footer{
     }
     #graphics figure{
         padding: 0px 20px;
+    }
+    #graphics img:hover{
+        transform: scale(1.15);
+        box-shadow: 0px 0px 9px 5px rgba(117,159,188,0.35);
     }
     #sns div{
         display: flex;
