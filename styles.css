@@ -11,7 +11,6 @@ body{
     font-style: normal;
     color: #251605;
     line-height: 1.5em;
-    text-transform: lowercase;
     max-width: 40ch;
 }
 nav ul{
@@ -140,7 +139,6 @@ ul.submenu a{
     text-transform: lowercase;
 }
 #introduction div{
-    margin: auto;
     font-size: large; 
     border-radius: 20px;
 }
@@ -200,14 +198,15 @@ img{
     max-height: 100%    
 }
 #pfp{
-    padding-top: 20px;
     display: flex;
     justify-content: center;
+    margin-left: 0;
 }
 #pfp img{
     border-radius: 500px;
 }
 #aboutme p{
+    margin-left: 30px;
     text-align: left;
     line-height: 2em;
     align-content: center;
@@ -361,7 +360,7 @@ footer{
     text-transform: capitalize;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
     header, main, footer {
         max-width: 1024px;
         align-content: center;
@@ -449,9 +448,6 @@ footer{
         transform: scale(1.05);
         box-shadow: 0px 0px 9px 5px rgba(117,159,188,0.35);
     }
-    #contact{
-        margin: 0px 34px;
-    }
     #contact h2{
         font-size: 30px;
     }
@@ -462,7 +458,6 @@ footer{
     }
     #aboutme{
         display: flex;
-        padding: 20px;
         margin: auto;
         text-align: left;
         line-height: 1.5em;
@@ -487,13 +482,12 @@ footer{
         justify-content: space-between;
     }
     #skills{
-        margin-left: 70px;
         width: 50%;
-        padding: 40px 40px 0px 40px;
+        padding: 40px 25px 0px 40px;
         margin-bottom: 0;
     }
     #fun{
-        margin-left: 30px;
+        margin-left: 50px;
     }
     #fun #label{
         left: 20px;
@@ -504,7 +498,7 @@ footer{
         max-width: 75%;
     }
     #designprojects{
-        padding: 0px 30px 0px 30px;
+        padding: 0px 30px;
     }
     #designprojects div{
         display: flex;
