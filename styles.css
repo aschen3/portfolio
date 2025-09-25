@@ -264,6 +264,10 @@ strong{
     color: #872657;
     font-weight: 600;
 }
+#designprojects{
+    text-align: center;
+    align-content: center;
+}
 #designprojects div img{
     max-height: fit-content;
     border-radius: 15px;
@@ -359,7 +363,7 @@ footer{
     font-weight: 400;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 12px;
+    font-size: 15px;
     text-transform: capitalize;
 }
 #links{
@@ -507,6 +511,7 @@ footer{
     }
     #designprojects{
         padding: 0px 30px;
+        text-align: left;
     }
     #designprojects div{
         display: flex;
