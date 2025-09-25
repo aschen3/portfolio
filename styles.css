@@ -362,6 +362,11 @@ footer{
     font-size: 12px;
     text-transform: capitalize;
 }
+#links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
 @media only screen and (min-width: 650px) {
     header, main, footer {
