@@ -174,9 +174,6 @@ ul.submenu a{
     padding-top: 50px;
 }
 #contact div{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
     padding-bottom: 20px;
 }
 #contact h2{
@@ -360,7 +357,7 @@ footer{
     font-weight: 400;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 15px;
+    font-size: 20px;
     text-transform: capitalize;
 }
 #links{
@@ -370,7 +367,7 @@ footer{
 }
  #links a{
     background-color: #872657;
-    padding: 8px 15px;
+    padding: 10px 12px;
     border-radius: 10px;
  }
 
@@ -660,8 +657,5 @@ footer{
         display: block;
         padding: 40px 0;
         max-width: 70%;
-    }
-    footer{
-        font-size: 20px;
     }
 }
