@@ -122,6 +122,9 @@ ul.submenu li{
     border: 0.75px solid #005268;
     text-align: center;
 }
+main{
+    padding: 20px;
+}
 #introduction figure{
     margin: auto;
     display: flex;
@@ -344,7 +347,7 @@ strong{
     box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
 }
 #contacting{
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
 }
 #contacting h3{
     text-align: left;
@@ -646,12 +649,9 @@ footer{
     line-height: 2em;
     padding-bottom: 0;
     }
-    #socials{ 
-        gap: 40px;
-        justify-content: left;
-    }
     #cat{
-        max-width: 50%;
-        padding-top: 20px;
+        margin-left: 35%;
+        max-width: 60%;
+        padding: 20px 0px;
     }
 }
