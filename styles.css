@@ -1,6 +1,5 @@
 html{
     scroll-behavior: smooth;
-    -webkit-text-size-adjust: 100%;
 }
 body{
     margin: auto;
@@ -183,7 +182,6 @@ ul.submenu a{
     font-size: 28px;
     line-height: 1.5em;
     font-optical-sizing: auto;
-    padding-left: 20px;
 }
 #cat{
     margin: auto;
@@ -202,13 +200,11 @@ img{
 #pfp{
     display: flex;
     justify-content: center;
-    margin-left: 0;
 }
 #pfp img{
     border-radius: 500px;
 }
 #aboutme p{
-    margin-left: 30px;
     text-align: left;
     line-height: 2em;
     align-content: center;
