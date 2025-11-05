@@ -2,7 +2,6 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    margin: auto;
     background: #FEF5EA;
     padding: 40px 0px;
     font-family: "area-normal", sans-serif;
@@ -11,6 +10,7 @@ body{
     color: #251605;
     line-height: 1.5em;
     max-width: 40ch;
+    font-size: 14px;
 }
 a{
     text-decoration: none;
@@ -21,7 +21,6 @@ nav ul{
 h1{
     text-align: center;
     font-family: "Signika Negative", sans-serif;
-    text-transform: capitalize;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 45px;
@@ -31,15 +30,17 @@ h1 a{
 }
 h2{
     font-weight: 600;
-    font-size: 30px;
-    line-height: 1.25em;
+    font-size: 27px;
     margin: 20px 0px;
-    text-transform: capitalize;
 }
 h3{
-    font-weight: 500;
-    margin: auto;
-    line-height: 1.5em;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 20px 0px;
+}
+h1, h2, h3, h4 {
+    margin: 2rem 0;
+    line-height: 1.25em;
 }
 q{
     display: block;
@@ -57,7 +58,6 @@ q{
     font-weight: 700;
     font-optical-sizing: auto;
     font-size: 20px;
-    text-transform: capitalize;
     position: relative;
 }
 #menu-icon {
@@ -122,7 +122,7 @@ ul.submenu li{
     text-align: center;
 }
 main{
-    padding: 20px;
+    padding: 30px;
 }
 #introduction figure{
     margin: auto;
@@ -135,16 +135,13 @@ ul.submenu a{
 #introduction img{
     border-radius: 10px;
 }
-#introduction{
-    padding-top: 22px;
-    padding: 0 20px;
-}
 #introduction h2{
     text-transform: lowercase;
 }
 #introduction div{
     font-size: large; 
     border-radius: 20px;
+    align-content: center;
 }
 #introduction p{
     line-height: 1.5em;
@@ -167,7 +164,6 @@ ul.submenu a{
     font-optical-sizing: auto;
     font-size: 16px;
     max-width: 245px;
-    text-transform: capitalize;
 }
 #sparkles{
     color: #759FBC;
@@ -200,9 +196,10 @@ img{
 #pfp{
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 #pfp img{
-    border-radius: 500px;
+    border-radius: 48px;
 }
 #aboutme p{
     text-align: left;
@@ -214,35 +211,14 @@ img{
     padding-top: 50px;
     padding-bottom: 20px;
 }
-#skills{
-    box-shadow: 0px 0px 36px -20px #759FBC;
-    border-radius: 20px;
-    padding: 30px;
-    margin-bottom: 20px;
-    }
-#skills h2{
-    color: #872657;
-    margin: 0;
-    margin-bottom: 20px;
-}
-#skills li{
-    list-style-type: circle;
-    margin: 0;
-}
 #fun{
     position: relative;
-}
-#fun #label{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 35%;
 }
 #fun section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
-    padding: 50px 0px 0px 35px;
+    padding-bottom: 20px;
 }
 #fun section img{
     display: block;
@@ -353,13 +329,8 @@ footer{
     border-top-style: solid;
     border-top-width: 1.5px;
     color: #005268; 
-    text-align: center; 
-    font-family: "Signika Negative", sans-serif;
-    font-weight: 400;
-    font-optical-sizing: auto;
-    font-style: normal;
+    text-align: left;
     font-size: 20px;
-    text-transform: capitalize;
 }
 #links{
     display: flex;
@@ -372,15 +343,20 @@ footer{
     border-radius: 10px;
  }
 
-@media only screen and (min-width: 650px) {
-    header, main, footer {
-        max-width: 1024px;
-        align-content: center;
-        margin: auto;
-        padding-bottom: 10px;
+@media only screen and (min-width: 768px) {
+    header{
+        padding: 0px;
     }
     body{
-        max-width: 80ch;
+        max-width: 1440px;
+        align-content: center;
+        padding-bottom: 10px;
+        padding: 0 100px;
+        font-size: 18px;
+    }
+    main{
+        padding: 0;
+        padding-top: 30px;
     }
     h1{
         font-size: 64px;
@@ -433,10 +409,10 @@ footer{
     #introduction{
         display: flex;
         flex-direction: row-reverse;
-        padding: 20px 0;
     }
     #introduction h2{
     margin: 0;
+    max-width: 20ch;
     }
     #introduction p{
         font-size: 28px;
@@ -473,40 +449,29 @@ footer{
     }
     #pfp{
         display: flex;
-        justify-content: end;
     }
     #pfp img{
-        border-radius: 500px;
-        display: block; 
         align-content: start;
         height: auto; 
         width: auto; 
-        max-width: 300px; 
-        max-height: 300px;
+        max-width: 390px; 
+        max-height: 390px;
+    }
+    #aboutme p{
+        margin-left: 90px;
+
     }
     #funstuff{
         padding-top: 100px;
         display: flex;
         justify-content: space-between;
-    }
-    #skills{
-        width: 50%;
-        padding: 40px 25px 0px 40px;
-        margin-bottom: 0;
-    }
-    #fun{
-        margin-left: 50px;
+        gap: 10px;
     }
     #fun #label{
         left: 20px;
         width: 25%;
     }
-    #fun section{
-        padding: 75px 0px 50px 75px;
-        max-width: 75%;
-    }
     #designprojects{
-        padding: 0px 30px;
         text-align: left;
     }
     #designprojects div{
@@ -649,4 +614,22 @@ footer{
         max-width: 60%;
         padding: 20px 0px;
     }
+    footer{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #links{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+     #links a{
+        background-color: #872657;
+     }
+     #links img{
+        width: 35px;
+        height: 35px;
+     }
 }
